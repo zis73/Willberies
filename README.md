@@ -5,5 +5,5 @@
 - JavaScript
 ### Библиотеки:
 - Bootstrap v5
-- swiper
+- Swiper Slider
   
