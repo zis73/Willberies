@@ -49,9 +49,17 @@ body{
 .slide{
   padding-top: 90px;
   padding-bottom: 110px;
+  min-height: 350px;
+  /* почему не 568px? */
 }
 .slide-1{
   background:#B4D1E0 url('../img/slide-image-1.png') no-repeat top right 5%;
+}
+.slide-2{
+  background:#bd24bd url('../img/slide-image-1.png') no-repeat top right 5%;
+}
+.slide-3{
+  background:#b91e38 url('../img/slide-image-1.png') no-repeat top right 5%;
 }
 .slide-title{
   color: #262D33;
@@ -77,6 +85,7 @@ body{
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
+  z-index: 9;
 }
 .slider-button{
   background-color: transparent;
@@ -249,4 +258,33 @@ body{
 .payment-logo{
   vertical-align: middle;
   margin-right: 19px;
+}
+@media (max-width: 1200px){
+  .slide-1,.slide-2,.slide-3{
+    background-size: cover;
+  }
+  card-3{
+    background-size: cover;
+  }
+}
+@media (max-width:992px){
+  .slider-nav{
+    display: none;
+  }
+}
+@media (max-width:576px){
+  .slide-title{
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+  
+  .card{
+    background-position: left top;
+    padding: 30px;
+    min-height: 300px;
+  }
+  .card-4{
+    background-position: right top;
+  }
 }
